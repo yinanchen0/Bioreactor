@@ -57,6 +57,9 @@ range of **25–35 °C (±0.5 °C)**.
 - A **12V heating element** is controlled through a transistor
 - The Arduino activates the heater by sending a digital HIGH signal to the transistor
 - Control logic continuously adjusts heating based on real-time temperature readings
+## schematic diagram
+ ![Bioreactor System Diagram](thermal.png)
+ ![Bioreactor System Diagram](thermal2.png)
   
 ### pH Control Subsystem
 
@@ -67,6 +70,9 @@ The pH subsystem maintains solution pH within the range of **3–7 (±0.2)**.
 - Acid and alkaline pumps are controlled via transistors
 - When pH deviates from the setpoint, the appropriate pump is activated
 - Pumps are powered by a 6V supply and controlled through Arduino digital pins
+  ## schematic diagram
+ ![Bioreactor System Diagram](ph.png)
+
 
 ### Stirring Subsystem
 
@@ -77,6 +83,8 @@ The stirring subsystem ensures uniform mixing at controlled speeds between
 - Motor speed feedback provided by a phototransistor
 - PWM output allows smooth acceleration to target speed
 - Voltage divider used to supply the motor with the required 3V
+  ## schematic diagram
+ ![Bioreactor System Diagram](stirring.png)
 
 ### Connection and Control Subsystem
 
@@ -87,4 +95,8 @@ System monitoring and remote control are enabled via an Arduino Uno and ESP32.
 - ESP32 acts as the I2C master, requesting data from the Arduino
 - Bidirectional level shifter used to match 5V (Arduino) and 3V (ESP32) logic levels
 - Data is sent to the **ThingsBoard** web server for visualization and logging
+  ## schematic diagram
+ ![Bioreactor System Diagram](shifter.png)
+   ## DashBoard
+ ![Bioreactor System Diagram](dashboard.png)
 
