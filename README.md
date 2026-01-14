@@ -33,6 +33,9 @@ The bioreactor control system is composed of four main subsystems:
 4. **Connection and Control Subsystem**  
    Arduino Uno and ESP32 with a web server for monitoring, control, and data logging
 
+   ![Bioreactor System Diagram](bioreactor.png)
+
+
 ## Overview
 Sensor data from the heating, pH, and stirring subsystems are processed by the
 connection/control subsystem. Based on this data, the system automatically adjusts
